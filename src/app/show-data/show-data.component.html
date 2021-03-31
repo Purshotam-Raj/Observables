@@ -1,0 +1,16 @@
+<button (click)="getData()">Get Data</button>
+<table *ngIf="flag">
+    <tr>
+        <th>UserId</th>
+        <th>Completed Status</th>
+        <th>Title</th>
+        <th>Id</th>        
+    </tr>
+    <tr *ngFor="let array of arrs">
+        <td>{{array.userId}}</td>
+        <td>{{array.completed}}</td>
+        <td>{{array.title}}</td>
+        <td>{{array.id}}</td>
+        
+    </tr>
+</table>
